@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ template "nfs-client-provisioner.fullname" . }}
+  name: {{ template "nfs-client-provisioner.name" . }}
   labels:
     app: {{ template "nfs-client-provisioner.name" . }}
     chart: {{ template "nfs-client-provisioner.chart" . }}
